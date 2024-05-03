@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  opendevin:
+    image: ghcr.io/opendevin/opendevin:0.3.1
+    env_file:
+      .env
+    volumes:
+      - ./workspace:/opt/workspace_base
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - "3000:3000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

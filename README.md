@@ -1,2 +1,2 @@
-# openDevin_docker
-Open Devin docker
+# openDevin docker
+Docker compose of [OpenDevin](https://opendevin.github.io/OpenDevin/)
